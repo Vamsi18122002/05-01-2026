@@ -217,20 +217,26 @@ sum();
 
 
 
-//               scope                Hoisting                             Intialisation    
+//               scope                Hoisting                             Intialisation   
 // var -->      functional              yes                                 no needed
 // let -->      block                   yes(but differently)                no needed       
 // const -->      block                  if they are not stored in script    needed
 //                                      they may support hoisting
 
 
-//           TDZ(Temporary Dead Zone)
-// var           it didn't goes
-// let          it goes
-// const        it goes
+//           TDZ(Temporary Dead Zone)        Redeclaration         Reintialisation
+// var           it didn't goes                 yes                     yes
+// let          it goes                         no                      yes
+// const        it goes                         no                       no
 
 
 
+
+// closure:
+// Inner function remembers variables from outer function
+
+
+// How it works with inner and outdr functions
 function outerFunction() {
   let count=0;
 
@@ -247,3 +253,15 @@ os();
 os();
 os();
 
+
+
+
+// IIFE(Immediately Innocable function expression)
+
+var O1 = (() =>{
+
+    var n ="Hai"
+    var m ="Hello"
+    console.log(n, m)
+
+})()
