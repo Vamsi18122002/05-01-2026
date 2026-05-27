@@ -1,0 +1,54 @@
+#del{
+    color:rgb(36, 133, 115)
+}
+
+.formatting{
+    color:rgb(83, 52, 31) 
+}
+
+h6{
+    color:rgb(60, 183, 74)
+}
+
+ *{
+     color:rgb(255, 174, 0)  
+ }
+div {
+     color:rgb(215, 250, 224)
+ } 
+div .k{
+     color:black
+   }
+        p,pre{  /* grouping selector */
+            color:rgb(204, 121, 201)
+        }
+        h4 + h5{
+            color:rgb(78, 7, 65); 
+        }
+
+
+         /* * {
+      font-family: Arial, sans-serif;
+    } */
+
+    /* Descendant Combinator
+    div p {
+      color: red;
+    } */
+
+    /* Child Combinator */
+    div > h3 {
+      color: green;
+    }
+
+    /* Adjacent Sibling Combinator */
+    h2 + p {
+      color: blue;
+    }
+
+    /* General Sibling Combinator
+    h1 ~ p {
+      color: orange;
+    } */
+
+    

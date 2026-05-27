@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive Data Table</title>
+<link rel="stylesheet" href="./index1.css">
+</head>
+<body>
+
+<h2>Employee Table</h2>
+
+<div class="table-container">
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th onclick="sortTable(0)">Name</th>
+        <th onclick="sortTable(1)">Age</th>
+        <th onclick="sortTable(2)">Department</th>
+        <th onclick="sortTable(3)">Salary</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Alice</td><td>28</td><td>HR</td><td>4000</td></tr>
+      <tr><td>Bob</td><td>35</td><td>IT</td><td>6000</td></tr>
+      <tr><td>Charlie</td><td>30</td><td>Finance</td><td>5000</td></tr>
+      <tr><td>David</td><td>25</td><td>IT</td><td>4500</td></tr>
+      <tr><td>Eve</td><td>40</td><td>Management</td><td>8000</td></tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

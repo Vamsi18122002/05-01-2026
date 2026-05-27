@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NYB_Infotech</title>
+</head>
+<body>
+
+
+      <h2><---- Lists ----></h2>  
+      <h4>(i)<-----Ordered Lists-----></h4>
+<ol start="3"type="A">
+        <li>Laptop</li>
+        <li>Mobile</li>
+        <ol start="3"type="1">
+            <li>charger</li>
+            <li>simcard</li>
+            
+        <ol start="3"type="I">
+                <li>Jio</li>
+                <li>Airtel</li>
+                <li>VI</li>
+        </ol>
+        <li>Bluetooth</li>
+        </ol>
+        <li>Computer</li>
+    </ol>
+     <hr>
+     <hr>
+    <h4>(ii)<----- Unordered Lists -----></h4> 
+     <ul>
+        <li>anvesh</li>
+        <li>bramha</li>
+        <ul>
+            <li>bhadra</li>
+            <li>bharani</li>
+            <ul>
+                <li>sultan</li>
+                <li>kumar</li>
+                <li>kamme</li>
+            </ul>
+           
+        </ul>
+        
+     </ul>
+     <hr>
+     <hr>
+     <h4>(iii)<-----Description List-----></h4>   
+        <dl>
+        <dt>anvesh:</dt>
+        <dd>He is the one of the human in the society</dd>
+        <dt>bramha:</dt>
+        <dd>He is a black mole in the society</dd>
+        <br>
+        <br>
+<hr><hr>
+        <h4>(iv)<-----Reversed List-----></h4>
+        <ol start="3"type="A" reversed>
+        <li>Laptop</li>
+        <li>Mobile</li>
+        <ol start="3"type="1" reversed>
+            <li>charger</li>
+            <li>simcard</li>
+            
+        <ol start="3"type="I" reversed>
+                <li>Jio</li>
+                <li>Airtel</li>
+                <li>VI</li>
+        </ol>
+        <li>Bluetooth</li>
+        </ol>
+        <li>Computer</li>
+    </ol>
+<br>
+        <hr>
+        <hr>
+        <h3><------Form Validations------></h3>
+        <form novalidate>
+            <label for="user name">User Name:</label>
+            <input type="text" id="user name" required placeholder="Enter your username" minlength="3" maxlength="15" pattern="[A-za-z]+"/>
+            <br><br>
+            <label for="ph">Enter Telephone Number:</label>
+            <input id=""type="number"min="1" max="50" step="5"pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"/>
+            <h3><-----Button Attributes-----></h3> 
+                <h5><-- class and id used for styling (or) JavaScript --></h5>
+            <button type="button"name="action" value="reset" disabled>Reset</button>
+            <button type="button"name="action" value="delete" autofocus>Submit</button>
+        </form>
+</body>
+</html>

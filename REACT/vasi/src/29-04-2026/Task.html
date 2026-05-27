@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Iterator + Generator + Storage Task</title>
+
+<style>
+  body{
+    font-family: Arial;
+    text-align:center;
+    margin-top:50px;
+  }
+
+  button{
+    padding:10px 20px;
+    margin:10px;
+    cursor:pointer;
+  }
+
+  .dark{
+    background:black;
+    color:white;
+  }
+</style>
+</head>
+
+<body>
+    
+<h1>Quote App</h1>
+<h2 id="quote">Click Next Quote</h2>
+
+<button onclick="showNextQuote()">Next Quote</button>
+<button onclick="toggleTheme()">Toggle Theme</button>
+
+<p>Quotes Viewed This Session: <span id="count">0</span></p>
+
+<script>
+
+// Quotes Array
+const quotes = [
+  "Success is not final.",
+  "Never give up.",
+  "Code every day.",
+  "Dream big.",
+  "Stay consistent."
+];
+
+// Generator
+function* quoteGenerator(arr){
+  for(let quote of arr){
+    yield quote;
+  }
+}
+
+let generator = quoteGenerator(quotes);
+
+// Iterator
+const iterator = quotes[Symbol.iterator]();
+
+console.log(iterator.next());
+console.log(iterator.next());
+
+// Session Storage Count
+let count = sessionStorage.getItem("viewCount") || 0;
+document.getElementById("count").innerText = count;
+
+// Show Next Quote
+function showNextQuote(){
+
+  let result = generator.next();
+
+  if(!result.done){
+    document.getElementById("quote").innerText = result.value;
+
+    count++;
+    sessionStorage.setItem("viewCount", count);
+    document.getElementById("count").innerText = count;
+
+  }else{
+    document.getElementById("quote").innerText = "No More Quotes";
+  }
+}
+
+// Local Storage Theme
+function toggleTheme(){
+
+  document.body.classList.toggle("dark");
+
+  if(document.body.classList.contains("dark")){
+    localStorage.setItem("theme","dark");
+  }else{
+    localStorage.setItem("theme","light");
+  }
+}
+
+// Load Saved Theme
+if(localStorage.getItem("theme") === "dark"){
+  document.body.classList.add("dark");
+}
+
+</script>
+
+</body>
+</html>

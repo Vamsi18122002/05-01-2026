@@ -1,0 +1,185 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    margin: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    width: calc(50% - 15px);
+    background: #975e5e;
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.body1 {
+    width: 80%;
+}
+
+.box1 {
+    background: #cfcfcf;
+    padding: 12px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.box {
+    background: #cfcfcf;
+    padding: 12px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.header-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.logo-left {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 30%;
+    background: #cfcfcf;
+    padding: 12px;
+}
+
+.nav-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+    background: #cfcfcf;
+    padding: 12px;
+}
+
+.boxes-row {
+    display: flex;
+}
+
+.box-start {
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.box-center {
+    justify-content: center;
+    flex: 1;
+}
+
+.box-end {
+    justify-content: flex-end;
+    flex: 1;
+}
+.box3 {
+    background:white;
+    padding: 12px;
+    margin-bottom: 10px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.sidebar1 {
+    width: 40%;
+    /* background-color: none; */
+}
+
+/* .body3{
+   padding: 70px 12px;
+} */
+
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* .sidebar {
+    width: 35%;
+} */
+
+.header, .body3 {
+    width: 70%;
+    padding: 30px;
+}
+.footer {
+    padding: 10px;
+}
+
+.banner {
+    padding: 30px;
+}
+
+.logo1 {
+    background: #cfcfcf;
+    padding: 12px;
+    text-align: start;
+    margin-bottom: 10px;
+}
+
+.tall {
+    padding: 60px 12px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.small {
+    width: calc(25% - 10px);
+    height: 70px;
+}
+
+
+.row {
+    display: flex;
+    gap: 20px;
+}
+
+.side {
+    width: 25%;
+    background-color: white;
+}
+
+.main-content {
+    width: 75%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.head {
+    height: 120px;
+}
+
+.area {
+    height: 250px;
+}
+
+.footer {
+    height: 60px;
+}

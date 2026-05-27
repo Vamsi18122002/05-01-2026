@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <!-- <Table></Table> -->
+        <table border="1" cellpadding="5" cellspacing="3">
+            <caption>Student Marks</caption>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Class</th>
+                <th>Marks</th>
+               
+            </tr>
+            <tr>
+                <td >vasi</td>
+                 <td>male</td> 
+                <td >10th</td>
+                <td rowspan="2">100</td> 
+                
+            </tr>
+            <tr>
+                <td colspan="2">imambi</td>
+                 <!-- <td>female</td>  -->
+                <td>9th</td>
+                <!-- <td>100</td> -->
+                 
+            </tr>
+        </table>
+
+        <hr>
+        <hr>
+            <!-- <form></form> -->
+             <form>
+            <label for="user name">User Name:</label>
+            <input type="text" id="user name" required placeholder="Enter your username" minlength="3" maxlength="15"/>
+            <br><br>
+            <label for="mail">Email:</label>
+            <input type="email" id="mail" required placeholder="Enter your mail"/>
+            <br><br>
+            <label >Enter your age:</label>
+            <input type="number"min="1" max="50" step="5" />
+            <br><br>
+            <label for="pwd">password:</label>
+            <input type="password" id="pwd" required oncopy="return false" onpaste="return false"placeholder="Enter the password"/>
+            <br><br>
+             <label for="pwd">Re Enter Password:</label>
+            <input type="password" id="pwd" required  oncopy="return false"   onpaste="return false" placeholder="Re Enter the password"/>
+           <br><br>
+            <label for="dd">Date:</label>
+            <input type="date" id="dd" required />
+            <br><br>
+            <label >Upload the file:</label>
+            <input type="file"/>
+            <br><br>
+            <label>Time:</label>
+            <input type="time"/>
+            <br><br>
+            <label>Wesite:</label>
+            <input type="URL"/>
+            
+        <hr>
+        
+        <label>range:</label>
+        <input type="range" required/>
+        <br><br>
+        <label>
+        <input type="checkbox" name="option1" value="Option 1" checked>Option1
+        </label>
+        <label>
+        <input type="checkbox" name="option2" value="Option 2" required>Option1
+        </label>
+        <br><br>
+        <label>
+        <input type="radio" name="gender" value="male">Male
+        </label>
+        <label>
+        <input type="radio" name="gender" value="female">Female
+        </label>
+        <br><br>
+        <label for="degree">Type of Degree:</label>
+        <select id="degree" >
+            <option >B.Tech</option>
+            <option >B.E.</option>
+            <option >Degree</option>
+        </select>
+        <br><br>
+        <label >Your Comments:</label>
+        <br>
+        <textarea  rows="4" cols="50" placeholder="Enter your comments here....">
+        </textarea>
+        <br><br>
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Name:</label>
+            <input type="text" >
+            <label >Email:</label>
+            <input type="email">
+        </fieldset>
+        <br>
+
+        <button type="submit">SUBMIT</button>
+        <button type="reset">RESET</button>
+
+        </form>
+        
+</body>
+</html>

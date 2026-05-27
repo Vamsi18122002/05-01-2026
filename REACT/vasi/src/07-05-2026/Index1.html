@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Draggable List</title>
+    <style>
+        body {
+            font-family: Arial;
+            padding: 20px;
+        }
+        ul {
+            width: 250px;
+            padding: 0;
+        }
+        li {
+            list-style: none;
+            padding: 12px;
+            margin: 5px 0;
+            background: lightblue;
+            border: 1px solid #333;
+            cursor: move;
+        }
+        .dragging {
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <h2>Draggable List</h2>
+    <ul id="list">
+        <li draggable="true">Item 1</li>
+        <li draggable="true">Item 2</li>
+        <li draggable="true">Item 3</li> 
+        <li draggable="true">Item 4</li>
+    </ul>
+    <script> 
+        const list = document.getElementById("list"); 
+        let draggedItem = null;
+        const items = list.querySelectorAll("li");
+        items.forEach(item => {
+            // Start dragging
+            item.addEventListener("dragstart", () => {
+                draggedItem = item;
+                item.classList.add("dragging");
+            });
+            // Stop dragging
+            item.addEventListener("dragend", () => {
+                item.classList.remove("dragging");
+                // Print updated order
+                updateOrder();
+            })
+            // Allow drop
+            item.addEventListener("dragover", (e) => {
+                e.preventDefault();
+            });
+            // Drop item
+            item.addEventListener("drop", () => {
+                if (draggedItem !== item) {
+                    let allItems = [...list.children];
+                    let draggedIndex = allItems.indexOf(draggedItem);
+                    let targetIndex = allItems.indexOf(item);
+                    if (draggedIndex < targetIndex) {
+                        list.insertBefore(draggedItem, item.nextSibling);
+                    } else {
+                        list.insertBefore(draggedItem, item);
+                    }
+                }
+            });
+        });
+        // Maintain updated order
+        function updateOrder() {
+            const currentOrder = [...list.children].map(li => li.textContent);
+            console.log("Updated Order:", currentOrder);
+        }
+    </script>
+</body>
+</html>

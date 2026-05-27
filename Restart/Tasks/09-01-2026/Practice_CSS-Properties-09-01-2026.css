@@ -1,0 +1,70 @@
+    div p {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: lightyellow;
+  padding: 5px;
+}
+    div > h3 {
+  color: green;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 2px solid green;
+}
+   h2 + p {
+  color: blue;
+  font-style: italic;
+  margin-top: 0;
+  background-color: #e0f0ff;
+}
+.bg {
+      background-color: rgb(239, 224, 255);
+     background-image: url("https://picsum.photos/600/400");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+      a {
+      color: blue;
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: red;
+    }
+
+    a:active {
+      color: green;
+    }
+
+    input:focus {
+      border: 2px solid orange;
+      outline: none;
+    }
+
+    p:first-child {
+      color: purple;
+    }
+
+     p::first-letter {
+      font-size: 30px;
+      color: red;
+    }
+
+    p::first-line {
+      font-weight: bold;
+    }
+
+    h1::before {
+      content: "<----- ";
+      color: gold;
+    }
+
+    h1::after {
+      content: " ----->";
+      color: gold;
+    }
+
+
+
+    

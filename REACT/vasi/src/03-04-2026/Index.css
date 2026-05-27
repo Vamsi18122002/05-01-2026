@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+}
+/* Mobile (max 600px) */
+@media (max-width: 600px) {
+  header {
+    font-size: 18px;
+    padding: 10px;
+  }
+  .container {
+    padding: 10px;
+  }
+  .card {
+    padding: 15px;
+  }
+  button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+/* Tablet (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    padding: 15px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+}
+
+/* Desktop (above 1024px) */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 900px;
+    margin: auto;
+  }
+}
+
+.box {
+      width: 200px;              /* Content width */
+      height: 100px;             /* Content height */
+
+      padding: 20px;             /* Space inside */
+      border: 5px solid black;   /* Border around */
+      margin: 30px;              /* Space outside */
+
+      background-color: lightblue;
+    }

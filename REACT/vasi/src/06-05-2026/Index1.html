@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body { font-family: Arial; padding: 20px; background: #f4f4f4; }
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+  gap: 15px;
+}
+
+.card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 50%;
+  height: 50%;
+}
+
+.content {
+  padding: 10px;
+}
+
+.title {
+  font-weight: bold;
+}
+
+.meta {
+  font-size: 13px;
+  color: gray;
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <div class="card">
+    <img src="./favicon.png">
+    <div class="content">
+      <div class="title">Blog Title</div>
+      <div class="meta">By John • June 2026</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <img src="https://picsum.photos/300/150">
+    <div class="content">
+      <div class="title">Another Post</div>
+      <div class="meta">By Jane • May 2026</div>
+    </div>
+  </div>
+
+</div>
+
+</body>
+</html>

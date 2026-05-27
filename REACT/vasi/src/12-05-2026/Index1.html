@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CSS Selectors Demo</title>
+
+  <style>
+    /* Universal Selector */
+    * {
+      font-family: Arial, sans-serif;
+      margin: 5px;
+    }
+
+    /* Element Selector */
+    h1 {
+      color: darkblue;
+    }
+
+    /* ID Selector */
+    #main-title {
+      background-color: lightgray;
+      padding: 10px;
+    }
+
+    /* Class Selector */
+    .box { 
+      border: 2px solid black;
+      padding: 10px;
+      width: 300px;
+    }
+
+    /* Group Selector */
+    h2, p {
+      color: darkgreen;
+    }
+
+    /* Descendant Selector */
+    .container p {
+      background-color: #f0f0f0;
+    }
+
+    /* Child Selector */
+    ul > li {
+      color: purple;
+    }
+
+    /* Adjacent Sibling Selector */
+    h3 + p {
+      color: red;
+    }
+
+    /* General Sibling Selector */
+    h4 ~ p {
+      font-style: italic;
+    }
+
+    /* Attribute Selector */
+    input[type="text"] {
+      border: 2px solid blue;
+    }
+
+    /* Pseudo-class Selector */
+    button:hover {
+      background-color: orange;
+      color: white;
+    }
+
+    /* First Child */
+    li:first-child {
+      font-weight: bold;
+    }
+
+    /* Pseudo-element Selector */
+    p::first-letter {
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 id="main-title">CSS Selectors Example</h1>
+
+  <div class="box container">
+    <h2>Class & Descendant Selector</h2>
+    <p>This paragraph is inside container.</p>
+  </div>
+
+  <div class="box">
+    <h3>Adjacent Sibling Example</h3>
+    <p>This paragraph becomes red.</p>
+  </div>
+
+  <div class="box">
+    <h4>General Sibling Example</h4>
+    <p>Italic paragraph 1</p>
+    <p>Italic paragraph 2</p>
+  </div>
+
+  <div class="box">
+    <h2>Child Selector Example</h2>
+    <ul>
+      <li>First Item</li>
+      <li>Second Item</li>
+      <li>Third Item</li>
+    </ul>
+  </div>
+
+  <div class="box">
+    <h2>Attribute Selector</h2>
+    <input type="text" placeholder="Enter text">
+    <input type="password" placeholder="Password">
+  </div>
+
+  <div class="box">
+    <h2>Pseudo-class Selector</h2>
+    <button>Hover Me</button>
+  </div>
+
+</body>
+</html>

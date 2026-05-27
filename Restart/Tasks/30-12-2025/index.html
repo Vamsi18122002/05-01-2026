@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Users</title>
+
+    <style>
+        button{
+            /* padding:6px 12px;
+            border-radius:4px; */
+            color:#fff;
+            border:none;
+            /* cursor:pointer; */
+        }
+        #get{ background:#4caf50; }
+        .clear{ background:#f44336; }
+    </style>
+</head>
+<body>
+
+<h2>User Details</h2>
+
+<button onclick="getUsers()" id="get">Get Data</button>
+<button onclick="clearData()" class="clear">Clear</button>
+
+<br><br>
+
+<table border="1" cellpadding="5" cellspacing="3">
+    <tr>
+        <th>Name</th>
+        <th>Username</th>
+        <th>Email</th>
+        <th>Latitude</th>
+        <th>Longitude</th>
+    </tr>
+    <tbody id="tbody"></tbody>
+</table>
+
+<script src="./Practice_git&github_30-12-2025.js"></script>
+</body>
+</html>

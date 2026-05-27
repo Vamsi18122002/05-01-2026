@@ -1,0 +1,10 @@
+/* desktop */
+@media(maxwidth:1000px){
+ padding:10px;
+ margin:10px
+}
+/* mobile */
+@media(maxwidth:760px){
+    padding:10px;
+    margin:10px
+}

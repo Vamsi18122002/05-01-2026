@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Example</title>
+    <style>
+        .tab {
+            background-color: blue;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ; 
+            gap: 10px;
+            padding: 10px;
+        }
+.table1{
+    grid-column: 1/4;
+}
+        
+    </style>
+</head>
+<body>
+    <div class="tab">
+        <div class="table1">Table1</div>
+        <div class="table2">Table2</div>
+        <div class="table3">Table3</div>
+        <div class="table4">Table4</div>
+    </div>
+</body>
+</html>

@@ -1,26 +1,4 @@
-//Reference Datatypes
 
-// Array
-// object
-// fuctions
-// es->6 map, weak map, set, weak set
-
-// Array
-// collection of data(homogeneous(same kind of data) or heterogeneous)
-
-// apple banana orange \ homogeneous data
-// 1 2 3 \ homogeneous data
-
-// 1,2,3....apple,banana,true\ heterogeneous data
-
-
-// var Apple = "apple"
-// var Banana = "Banana"
-
-// var A = [1,2,3,Apple,Banana,"vasi",true,false,null,undefined,[10,20,30,40,50]]
-
-// console.log(A.length)
-// console.log(A)
 
 
 var A = {

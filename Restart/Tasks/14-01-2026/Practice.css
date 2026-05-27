@@ -1,0 +1,55 @@
+*{
+    box-sizing:border-box;
+    background-color: antiquewhite;
+}
+
+body{
+ background-color: aliceblue;
+}
+
+/* .container{
+    background-color: antiquewhite;
+    padding : 10px;
+    margin: 10px;
+
+} */
+
+.logo1{
+    background-color: white;
+    height :30px;
+    width :250px;
+    display:flex;
+    margin: 2px;
+    flex-direction: start;
+}
+
+.nav1{
+   
+    background-color: rgb(190, 84, 84);
+    height :30px;
+    width :250px;
+    /* display:flex;
+    flex-direction: center;
+    justify-content: center; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header{
+   
+    background-color: rgb(84, 190, 105);
+    height :30px;
+    width :250px;
+    /* display:flex;
+    flex-direction: center;
+    justify-content: center; */
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar{
+    display: flex;
+    
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Collapsible Sidebar</title>
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 250px;
+      height: 100%;
+      background: #2c3e50;
+      color: white;
+      padding: 20px;
+      transition: transform 0.3s ease;
+    }
+
+    .sidebar h2 {
+      margin-bottom: 20px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar ul li {
+      padding: 10px 0;
+      cursor: pointer;
+    }
+    /* Mobile styles */
+    @media (max-width: 768px) {
+      .sidebar {
+        transform: translateX(-100%);
+      }
+
+      .sidebar.active {
+        transform: translateX(0);
+      }
+
+      .main {
+        margin-left: 0;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+    }
+</style>
+</head>
+<body>
+
+  <button class="menu-btn" id="menuBtn">&#9776;</button>
+
+  <div class="sidebar" id="sidebar">
+    <h2>My App</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>Users</li>
+      <li>Settings</li>
+      <li>Logout</li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main" id="mainContent">
+    <h1>Dashboard</h1>
+    <p>This is the main content area.</p>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./Index.js"></script>
+ 
+</body>
+</html>
