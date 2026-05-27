@@ -38,27 +38,3 @@ localStorage.setItem("username", "Sai");
 console.log("Session Storage:", sessionStorage.getItem("current"));
 console.log("Local Storage:", localStorage.getItem("username"));
 
-//CallBack Function
-function greeting(name, callback) {
-  console.log("Hello " + name);
-  callback();
-}
-function bye() {
-  console.log("Goodbye!");
-}
-greeting("Sai", bye);
-
-
-function wish(L,M,N){
-    console.log("x = "+L)
-    M()
-    N()
-}
-function M(){
-    console.log("It is a callback function")
-}
-function N(){
-    console.log("It is a N callback function")
-}
-wish(133223,y,z)
-
