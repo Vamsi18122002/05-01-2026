@@ -1,15 +1,15 @@
  import React, { createContext, useState } from 'react';
-  import N from './N';
+  import F from './F'
   export let co=createContext()
-  function M()  {
+  function E()  {
     let [a,seta] = useState(10)
     return (
      <div>
         <co.Provider value={[a,seta]}>
-        <N/>    
+        <F/>    
         </co.Provider>
      </div>
    );
  };
 
-export default M;
+export default E;

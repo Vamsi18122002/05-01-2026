@@ -126,17 +126,21 @@
 // )
 
 import React from 'react'
-import Counter from './21-05-2026/Redux-Tool/Counter'
-import  A from './28-05-2025/Components_of_React&React_Data_State_Management/A'
+//import Counter from './21-05-2026/Redux-Tool/Counter'
+// import  A from './28-05-2025/Components_of_React&React_Data_State_Management/A'
 import B from './28-05-2025/React.Memo()&Usememo()&Usecallback()/B'
 import Ap from "./28-05-2025/React.Memo()&Usememo()&Usecallback()/Ap"
+import A from './29-05-2026/Conditional_Rendering/A'
+import Counter from "./29-05-2026/Custom_Hook/Counter"
+import E from "./29-05-2026/Context_API/E"
 function App() {
   return (
     <div>
-      {/* <Counter /> */}
-      <A/>
-      {/* <B/>
+      <Counter />
+      {/* <A/>  */}
+      {/* <B/> 
       <Ap/> */}
+      {/* <E/> */}
     </div>
   )
 }
