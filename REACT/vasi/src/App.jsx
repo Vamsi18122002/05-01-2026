@@ -131,13 +131,20 @@ import React from 'react'
 import B from './28-05-2025/React.Memo()&Usememo()&Usecallback()/B'
 import Ap from "./28-05-2025/React.Memo()&Usememo()&Usecallback()/Ap"
 import A from './29-05-2026/Conditional_Rendering/A'
-import Counter from "./29-05-2026/Custom_Hook/Counter"
+import Counter from "./01-06-2026/Redux_Tool_Kit/Counter"
 import E from "./29-05-2026/Context_API/E"
+import Users from "./01-06-2026/Useeffect/Users"
+import Index from './01-06-2026/Redux_API/Index'
+import K from './01-06-2026/High_Order_Component/K'
+
 function App() {
   return (
     <div>
-      <Counter />
-      {/* <A/>  */}
+      {/* <Index/> */}
+        <Users/>
+      {/* <Counter /> */}
+      {/* <K/> */}
+      {/* <A/>  */} 
       {/* <B/> 
       <Ap/> */}
       {/* <E/> */}

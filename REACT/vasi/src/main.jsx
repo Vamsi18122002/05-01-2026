@@ -17,7 +17,7 @@ import App from './App'
 
 import { Provider } from 'react-redux'
 
-import { store } from './21-05-2026/Redux-Tool/store'
+import { store } from './01-06-2026/Redux_Tool_Kit/store'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <Provider store={store}>
