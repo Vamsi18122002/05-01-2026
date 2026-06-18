@@ -129,19 +129,27 @@ import React from 'react'
 //import Counter from './21-05-2026/Redux-Tool/Counter'
 // import  A from './28-05-2025/Components_of_React&React_Data_State_Management/A'
 import B from './28-05-2025/React.Memo()&Usememo()&Usecallback()/B'
-import Ap from "./28-05-2025/React.Memo()&Usememo()&Usecallback()/Ap"
-import A from './29-05-2026/Conditional_Rendering/A'
+//import Ap from "./28-05-2025/React.Memo()&Usememo()&Usecallback()/Ap"
+// import A from './29-05-2026/Conditional_Rendering/A'
 import Counter from "./01-06-2026/Redux_Tool_Kit/Counter"
 import E from "./29-05-2026/Context_API/E"
 // import Users from "./01-06-2026/Useeffect/Users"
-import Index from './01-06-2026/Redux_API/Index'
+// import Index from './01-06-2026/Redux_API/Index'
 import K from './01-06-2026/High_Order_Component/K'
 import Users from './03-06-2026/API_Calls&API_Methods/Users'
+import Ap from "./18-06-2026/React_State_Data_Management/Ap"
+import A from "./18-06-2026/React_State_Data_Management/Props_Drilling/A"
+import Index from "./18-06-2026/React.memo()/Index"
+import CR from "./18-06-2026/Components_of_React/CR"
 function App() {
   return (
     <div>
+      <CR/>
+        <Ap/>
+        <A/>
+        <Index/>
       {/* <Index/> */}
-        <Users/>
+        {/* <Users/> */}
       {/* <Counter /> */}
       {/* <K/> */}
       {/* <A/>  */} 
