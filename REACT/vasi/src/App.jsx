@@ -131,25 +131,32 @@ import React from 'react'
 // import B from './28-05-2025/React.Memo()&Usememo()&Usecallback()/B'
 //import Ap from "./28-05-2025/React.Memo()&Usememo()&Usecallback()/Ap"
 // import A from './29-05-2026/Conditional_Rendering/A'
-import Counter from "./01-06-2026/Redux_Tool_Kit/Counter"
-import E from "./29-05-2026/Context_API/E"
+// import Counter from "./01-06-2026/Redux_Tool_Kit/Counter"
+// import E from "./29-05-2026/Context_API/E"
 // import Users from "./01-06-2026/Useeffect/Users"
 // import Index from './01-06-2026/Redux_API/Index'
-import K from './01-06-2026/High_Order_Component/K'
-import Users from './03-06-2026/API_Calls&API_Methods/Users'
+// import K from './01-06-2026/High_Order_Component/K'
+// import Users from './03-06-2026/API_Calls&API_Methods/Users'
 import Ap from "./18-06-2026/React_State_Data_Management/Ap"
 // import A from "./18-06-2026/React_State_Data_Management/Props_Drilling/A"
 import Index from "./18-06-2026/React.memo()/Index"
 import CR from "./18-06-2026/Components_of_React/CR"
 import A from "./19-06-2026/Usememo()&Usecallback()/A"
 import B from "./19-06-2026/Conditional-Rendering/B"
-import C from "./19-06-2026/DataBinding/C"
+// import C from "./19-06-2026/DataBinding/C"
+// import HOC from './22-06-2026/Higher_order_Components/HOC'
+import K from './22-06-2026/Higher_order_Components/K'
+import Users from './22-06-2026/Custom_Hooks/Users'
+import C from './22-06-2026/Context_API/C'
 function App() {
   return (
     <div>
-      <A/>
-      <B/>
+      <K/>
+      <Users/>
       <C/>
+      {/* <A/>
+      <B/>
+      <C/> */}
       {/* <CR/>
         <Ap/>
         <A/>
@@ -166,4 +173,4 @@ function App() {
   )
 }
 
-export default App
+export default App;
