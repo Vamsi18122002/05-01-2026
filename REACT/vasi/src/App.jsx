@@ -139,21 +139,27 @@ import React from 'react'
 // import Users from './03-06-2026/API_Calls&API_Methods/Users'
 import Ap from "./18-06-2026/React_State_Data_Management/Ap"
 // import A from "./18-06-2026/React_State_Data_Management/Props_Drilling/A"
-import Index from "./18-06-2026/React.memo()/Index"
+// import Index from "./18-06-2026/React.memo()/Index"
 import CR from "./18-06-2026/Components_of_React/CR"
 import A from "./19-06-2026/Usememo()&Usecallback()/A"
 import B from "./19-06-2026/Conditional-Rendering/B"
 // import C from "./19-06-2026/DataBinding/C"
 // import HOC from './22-06-2026/Higher_order_Components/HOC'
 import K from './22-06-2026/Higher_order_Components/K'
-import Users from './22-06-2026/Custom_Hooks/Users'
+// import Users from './22-06-2026/Custom_Hooks/Users'
 import C from './22-06-2026/Context_API/C'
-function App() {
+import Index from './23-06-2026/Redux_API/Index'
+import Count from './23-06-2026/Redux_Tool_Kit/Count'
+import Users from './23-06-2026/API_Calls&Methods/Users'
+function App() { 
   return (
     <div>
-      <K/>
+      <Index/>
+      <Count/>
       <Users/>
-      <C/>
+      {/* <K/>
+      <Users/>
+      <C/> */}
       {/* <A/>
       <B/>
       <C/> */}
