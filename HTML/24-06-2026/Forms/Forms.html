@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forms</title>
+</head>
+<body>
+<h1>Student Data</h1>
+<form oninput="result.value=parseInt(num1.value||0)+parseInt(num2.value||0)">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name"><br><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email"><br><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password"><br><br>
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone"><br><br>
+        <label for="website">Website:</label><br>
+        <input type="url" id="website"><br><br>
+        <label for="age">Age:</label><br>
+        <input type="number" id="age"><br><br>
+        <label for="dob">Date:</label><br>
+        <input type="date" id="dob"><br><br>
+        <label for="color">Favorite Color:</label><br>
+        <input type="color" id="color"><br><br>
+        <label for="range">Range:</label><br>
+        <input type="range" id="range"><br><br>
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file"><br><br>
+        <input type="hidden" value="hidden-data">
+    </fieldset>
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" name="gender" id="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female">
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="other">
+        <label for="other">Other</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Hobbies</legend>
+        <input type="checkbox" id="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="music">
+        <label for="music">Music</label>
+        <input type="checkbox" id="sports">
+        <label for="sports">Sports</label>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Country Selection</legend>
+        <label for="country">Choose Country:</label><br>
+        <select id="country">
+            <optgroup label="Asia">
+                <option>India</option>
+                <option>Japan</option>
+                <option>China</option>
+            </optgroup>
+            <optgroup label="Europe">
+                <option>Germany</option>
+                <option>France</option>
+                <option>Italy</option>
+            </optgroup>
+        </select>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Feedback</legend>
+        <label for="message">Message:</label><br>
+        <textarea id="message" rows="5" cols="40"></textarea>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Datalist</legend>
+        <label for="browser">Choose Browser:</label><br>
+        <input list="browsers" id="browser">
+        <datalist id="browsers">
+            <option value="Chrome">
+            <option value="Firefox">
+            <option value="Edge">
+            <option value="Safari">
+        </datalist>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Output</legend>
+        <input type="number" id="num1" value="0"> +
+        <input type="number" id="num2" value="0">
+        <br><br>
+        Result:
+        <output name="result">0</output>
+    </fieldset>
+    <br>
+    <button type="submit">Submit</button>
+    <button type="reset">Reset</button>
+    <button type="button" onclick="alert('Button Clicked')">Custom Button</button>
+</form>
+</body>
+</html>
