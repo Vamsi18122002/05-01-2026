@@ -1,0 +1,18 @@
+#Container{
+    display:flex;
+    flex-direction: column;
+    /* flex-direction: row; by default it's flex direction is row */
+    justify-content: center;
+    align-items: center;
+    height :50vh;
+}
+
+.section{
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-end;
+    height:50vh;
+     /* padding: 50px;
+    margin:50px; */
+}

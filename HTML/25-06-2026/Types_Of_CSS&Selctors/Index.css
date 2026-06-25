@@ -1,0 +1,35 @@
+/* Id Selector */
+#heading{
+    color:chartreuse;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: end;
+}
+ /* Class Selector */
+.header{
+    color:coral;
+    font-size: medium;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-align: start;
+}
+/*Element Selector */
+ b{
+    color:darkolivegreen;
+    font-size: larger;
+    font-weight: lighter;
+    font-family: Arial, Helvetica, sans-serif;
+ }
+ /* Universal Selector */
+ *{
+    margin:0;
+    padding:0 
+ }
+/* Grouping Selector */
+u,strike{
+    color:rgb(75, 36, 36);
+           font-size: medium;
+           font-family: Arial, Helvetica, sans-serif;
+           font-weight: bolder;
+        }
